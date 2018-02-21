@@ -110,6 +110,7 @@ imsub = imraw - imnew;
 imsub = imsub(Npad+1:Npad+Nraw(1),Npad+1:Npad+Nraw(2));
 imnew = imnew(Npad+1:Npad+Nraw(1),Npad+1:Npad+Nraw(2));
 
+imnew_b = imnew; % store background image under a new name 'imnew_b'
     % OUTPUT parameters
     % imnew: the background image (= only structures > epsin)
     % imsub: raw image - background image    
